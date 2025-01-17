@@ -1,10 +1,8 @@
+import { createSeed } from "../helperFunctions/seedCreator.js";
+
 export const createWheat = () => {
 
-    const wheat = {
-        type: "Wheat",
-        height: 230,
-        output: 6
-    }
+    const wheat = createSeed("Wheat", 230, 6);
 
     return wheat;
     

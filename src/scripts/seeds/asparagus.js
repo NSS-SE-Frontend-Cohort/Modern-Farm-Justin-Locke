@@ -1,10 +1,7 @@
+import { createSeed } from "../helperFunctions/seedCreator.js";
 export const createAsparagus = () => {
     
-    const asparagus = {
-        type: "Asparagus",
-        height: 24,
-        output: 4
-    }
+    const asparagus = createSeed("Asparagus", 24, 4);
 
     return asparagus;
 }

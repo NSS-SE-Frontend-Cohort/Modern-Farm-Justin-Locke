@@ -1,10 +1,8 @@
+import { createSeed } from "../helperFunctions/seedCreator.js";
+
 export const createCorn = () => {
     
-    const corn = {
-        type: "Corn",
-        height: 180,
-        output: 6
-    }
+    const corn = createSeed("Corn", 180, 6);
 
     return corn;
 }
