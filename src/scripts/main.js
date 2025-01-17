@@ -10,7 +10,7 @@ const yearlyPlan = createPlan();
 console.log(JSON.stringify(yearlyPlan));
 
 const cornSeed = createCorn();
-console.log(cornSeed);
+console.log(JSON.stringify(cornSeed));
 plantSeeds(yearlyPlan);
 const field = usePlants();
 
