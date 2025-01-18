@@ -2,17 +2,22 @@ export const harvestPlants = (plantArray) => {
     let harvestedPlants = [];
 
     plantArray.forEach(plant => {
-        let counter = 0;
-        
-        if (counter < plant.output && plant.type != "Corn") {
-            harvestedPlants.push(plant);
-            counter ++;
-        }
-        else if (plant.type == "Corn" && counter < plant.output/2) {
-            harvestedPlants.push(plant);
-            counter ++;
-        }
-    });
+        if (plant.type == "Corn") {
+            let counter = 0;
 
-    return harvestPlants;
+            while (counter < plant.output/2) {
+                harvestedPlants.push(plant);
+                counter++;
+            }
+        }
+        else {
+            let counter = 0;
+
+            while (counter < plant.output) {
+                harvestedPlants.push(plant);
+                counter++;
+            }
+        }       
+    });
+    return harvestedPlants;
 }

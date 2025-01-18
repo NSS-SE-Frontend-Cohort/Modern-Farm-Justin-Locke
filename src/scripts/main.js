@@ -17,4 +17,4 @@ const field = usePlants();
 console.log('field = ',JSON.stringify(field));
 
 const harvestedPlants = harvestPlants(field);
-console.log("Harvested plants =", harvestedPlants);
+console.log("Harvested plants =", JSON.stringify(harvestedPlants));
