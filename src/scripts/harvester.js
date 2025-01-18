@@ -6,7 +6,7 @@ export const harvestPlants = (plantArray) => {
             let counter = 0;
 
             while (counter < plant.output/2) {
-                harvestedPlants.push(plant.type);
+                harvestedPlants.push(plant);
                 counter++;
             }
         }
@@ -14,7 +14,7 @@ export const harvestPlants = (plantArray) => {
             let counter = 0;
 
             while (counter < plant.output) {
-                harvestedPlants.push(plant.type);
+                harvestedPlants.push(plant);
                 counter++;
             }
         }       

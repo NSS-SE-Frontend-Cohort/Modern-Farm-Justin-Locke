@@ -3,7 +3,7 @@ console.log("Welcome to the main module")
 import { createPlan } from './plan.js';
 import { createCorn } from './seeds/corn.js';
 import { usePlants } from './field.js';
-import { plantSeeds } from './tactor.js';
+import { plantSeeds } from './tractor.js';
 import { harvestPlants } from './harvester.js';
 import { catalog } from './catalog.js';
 
@@ -23,3 +23,4 @@ console.log("Harvested plants =", JSON.stringify(harvestedPlants));
 const html = catalog(harvestedPlants);
 console.log(html)
 
+document.getElementById('food-list').innerHTML(html);
