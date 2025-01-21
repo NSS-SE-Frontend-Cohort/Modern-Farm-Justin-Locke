@@ -16,8 +16,15 @@ const field = usePlants();
 
 const harvestedPlants = harvestPlants(field);
 
-const foodHtml = catalog(harvestedPlants);
+const sortedHarvestedPlants = harvestedPlants.sort((a, b) => {
+    if (a.type < b.type) return -1;
+    if (a.type > b.type) return 1;
+    return 0;
+})
+
+const foodHtml = catalog(sortedHarvestedPlants);
 console.log(foodHtml);
+
 
 const foodContainer = document.getElementById("food-list");
 console.log("Food container", foodContainer);
