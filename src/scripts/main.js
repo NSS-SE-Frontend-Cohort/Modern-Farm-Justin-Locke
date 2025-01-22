@@ -1,5 +1,3 @@
-console.log("Welcome to the main module")
-
 import { createPlan } from './plan.js';
 import { usePlants } from './field.js';
 import { plantSeeds } from './tractor.js';
@@ -8,7 +6,6 @@ import { catalog } from './catalog.js';
 
 
 const yearlyPlan = createPlan();
-console.log(JSON.stringify(yearlyPlan));
 
 plantSeeds(yearlyPlan);
 
@@ -23,9 +20,7 @@ const sortedHarvestedPlants = harvestedPlants.sort((a, b) => {
 })
 
 const foodHtml = catalog(sortedHarvestedPlants);
-console.log(foodHtml);
 
 
 const foodContainer = document.getElementById("food-list");
-console.log("Food container", foodContainer);
 foodContainer.innerHTML = foodHtml;
