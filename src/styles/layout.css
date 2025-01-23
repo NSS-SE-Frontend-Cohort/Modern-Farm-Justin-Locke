@@ -1,0 +1,14 @@
+
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.plant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

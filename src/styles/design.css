@@ -1,0 +1,22 @@
+
+.plant {
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#asparagus::before {
+    content: ;
+}
+
+#corn::before {
+    content: "\1F33D";
+}
+
+#soybean::before {
+    content: "\1F331";
+}
+#wheat::before {
+    content: "\1F33E";
+}

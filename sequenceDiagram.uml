@@ -1,0 +1,20 @@
+@startuml
+
+
+main -> createPlan: Create Yearly Plan
+createPlan -> main: Return Yearly Plan
+main -> tractor: Give Yearly Plan
+tractor -> seeds: Choose seeds to plant
+seeds -> seedCreator: Create seeds
+seedCreator -> seeds: Created seeds
+seeds -> tractor: Seeds to plant
+tractor -> main: Return seeds to plant
+main -> field: Send seeds to field
+field -> main: Return planted field of seeds
+main -> harvester: Harvest field
+harvester -> main: Return Harvested Plants
+main -> catalog: Send harvested plants to generate html 
+catalog -> main: Return Generated html
+main -> index: Display Harvest
+
+@enduml

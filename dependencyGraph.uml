@@ -1,0 +1,15 @@
+@startuml
+
+[index] --> [main]
+
+[main] --> [plan]
+[main] --> [field]
+[main] --> [tractor]
+[main] --> [harvester]
+[main] --> [catalog]
+
+[tractor] --> [seeds]
+[tractor] --> [field]
+
+[seeds] --> [seedCreator]
+@enduml
